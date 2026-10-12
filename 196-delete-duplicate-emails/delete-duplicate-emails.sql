@@ -5,7 +5,12 @@ join person as p2
 on p1.email = p2.email
 where p1.id > p2.id
 
-
+-- DELETE FROM Person 
+-- WHERE id NOT IN (
+--     SELECT id FROM (
+--         SELECT MIN(id) AS id FROM Person GROUP BY email
+--         ) AS temp
+-- );
 
 -- DELETE FROM Person
 -- WHERE id IN (
