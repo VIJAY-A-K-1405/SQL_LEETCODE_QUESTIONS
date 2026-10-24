@@ -11,3 +11,9 @@ where b.bonus < 1000 or b.bonus is null
 -- left join Bonus b
 -- on e.empId = b.empId
 -- where ifnull(b.bonus, 0) < 1000
+
+-- SELECT e.name, b.bonus
+-- FROM Employee AS e
+-- LEFT JOIN Bonus AS b
+--     ON e.empId = b.empId
+-- WHERE b.bonus < 1000 OR ISNULL(b.bonus)
